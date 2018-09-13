@@ -24,18 +24,18 @@ Scientific Programming Lab for QCB
     :glob:
     
     README.md
-    introduction.ipynb
-    practical2.ipynb        
-    practical3.ipynb	
-    practical4.ipynb
-    practical5.ipynb    
-    practical6.ipynb
-    practical7.ipynb
-    practical8.ipynb
-    practical9.ipynb
-    practical10.ipynb
-    practical11.ipynb
-    Midtermsimulation.ipynb
+#    introduction.ipynb
+#    practical2.ipynb        
+#    practical3.ipynb	
+#    practical4.ipynb
+#    practical5.ipynb    
+#    practical6.ipynb
+#    practical7.ipynb
+#    practical8.ipynb
+#    practical9.ipynb
+#    practical10.ipynb
+#    practical11.ipynb
+#    Midtermsimulation.ipynb
 
      
 .. meta::
