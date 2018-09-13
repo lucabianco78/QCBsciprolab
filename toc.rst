@@ -4,7 +4,7 @@
     :maxdepth: 2
     :glob:
 
-    home.ipynb
+    README.md
     usage.md
     jupman-tests.ipynb
 
