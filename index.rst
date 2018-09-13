@@ -23,7 +23,7 @@ Scientific Programming Lab for QCB
     :maxdepth: 2
     :glob:
     
-    README.md
+#    README.md
 #    introduction.ipynb
 #    practical2.ipynb        
 #    practical3.ipynb	
