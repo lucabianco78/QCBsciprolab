@@ -4,6 +4,7 @@
     :maxdepth: 2
     :glob:
 
+	home.ipynb
 	introduction.ipynb
 #    README.md
 #    usage.md
