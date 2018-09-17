@@ -38,8 +38,8 @@ Scientific Programming Lab for QCB
 #    Midtermsimulation.ipynb
 
      
-#.. meta::
-#   :http-equiv=Refresh: 0; url=home.html 
+.. meta::
+   :http-equiv=Refresh: 0; url=home.html 
 
 .. toctree::
    :includehidden:
