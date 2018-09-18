@@ -22,7 +22,7 @@ Scientific Programming Lab for QCB
 .. toctree::
     :maxdepth: 2
     :glob:
-    
+	introduction.ipynb	    
 
      
 .. meta::
