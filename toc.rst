@@ -5,7 +5,7 @@
     :glob:
 
     home.ipynb
-    #introduction.ipynb
+    introduction.ipynb
     
     
 Table of Contents
