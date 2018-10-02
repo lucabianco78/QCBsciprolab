@@ -6,6 +6,7 @@
 
     home.ipynb
     introduction.ipynb
+    practical2.ipynb
     
     
 Table of Contents
