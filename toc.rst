@@ -10,6 +10,7 @@
     practical3.ipynb
     practical4.ipynb
     practical5.ipynb
+    practical6.ipynb
     
     
 Table of Contents
