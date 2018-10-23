@@ -12,7 +12,7 @@
     practical5.ipynb
     practical6.ipynb
     practical7.ipynb
-    
+    practical8.ipynb
     
 Table of Contents
 ---------------------
