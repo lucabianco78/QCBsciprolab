@@ -20,8 +20,8 @@ def getFirstNprimes(N):
     #uncomment next line to introduce a bug
     #res.append(1)
     #or a more subtle error:
-    #ind = random.randint(0,len(res)-1)
-    #res[ind] = 10
+    ind = random.randint(0,len(res)-1)
+    res[ind] = 10
     
     return res        
 
