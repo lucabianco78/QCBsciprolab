@@ -19,6 +19,10 @@ def getFirstNprimes(N):
         current += 1
     #uncomment next line to introduce a bug
     #res.append(1)
+    #or a more subtle error:
+    ind = random.randint(0,len(res)-1)
+    res[ind] = 10
+    
     return res        
 
 class Testing(unittest.TestCase):
@@ -42,5 +46,5 @@ class Testing(unittest.TestCase):
         self.assertTrue(len(getFirstNprimes(-1)) == 0)
 
 if __name__ == "__main__":
-    unittest.main()
+#    unittest.main()
     print(getFirstNprimes(20))
