@@ -2,16 +2,18 @@ import unittest
 import random
 
 #this has problems (test X=[1,1,2,2,3], Y=[4,3])
-def myListIntersection(X,Y):
+def myListIntersection2(X,Y):
     tmp = X + Y
     vals = [x for x in tmp if tmp.count(x) == 2]
     return list(set(vals))
 
 ##Correct!
-def myListIntersection2(X,Y):
-    inx = [ x for x in X if x in Y]
-    iny = [y for y in Y if y in X]
-    return list(set(inx + iny))
+def myListIntersection(X,Y):
+    inter = [ x for x in X if x in Y]
+    print("X", X)
+    print("Y", Y)
+    print("inter", list(set(inter)))
+    return list(set(inter))
     
 A = [1, 2, 3, 4, 7, 12]
 B = [4, 1, 7, 120]
@@ -34,10 +36,9 @@ class Test(unittest.TestCase):
         r = myListIntersection(self.x, self.y)
         self.assertFalse(len(r) > len(self.x))
         self.assertFalse(len(r) > len(self.y))
-        s1 = [a for a in self.x if a in self.y]
-        s2 = [a for a in self.y if a in self.x]
-        S = set(s1+s2)
-        self.assertTrue(len(r) == len(S))
+        inter = list(set([a for a in self.x if a in self.y]))
+        
+        self.assertTrue(len(r) == len(inter))
     
     def test_empty(self):
             self.assertEqual(myListIntersection(self.x, []),[])
