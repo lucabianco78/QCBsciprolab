@@ -7,7 +7,7 @@ class SelectionSort:
     def __init__(self,data, verbose = True):
         self.__data = data
         self.__comparisons = 0
-        self.__swaps = 0
+        self.__operations = 0
         self.__verbose = verbose
         self.__time = 0
         
@@ -17,11 +17,11 @@ class SelectionSort:
     def getTime(self):
         return self.__time
     
+    def getOperations(self):
+        return self.__operations
+    
     def getComparisons(self):
         return self.__comparisons
-    
-    def getSwaps(self):
-        return self.__swaps
     
     def swap(self, i, j):
         """
@@ -51,7 +51,7 @@ class SelectionSort:
     
     def sort(self):
         self.__comparisons = 0
-        self.__swaps = 1
+        self.__operations = 1
         if self.__verbose:
             print("Initial list:")
             print(self.__data)
@@ -62,7 +62,7 @@ class SelectionSort:
         for i in range(len(self.__data) - 1):
                 j = self.argmin(i)
                 self.swap(i,j) 
-                self.__swaps += 1
+                self.__operations += 1
                 if self.__verbose:
                     print("It. {}. data[{}]<->data[{}] {}<->{}".format(i,
                                                                        i,
@@ -77,7 +77,7 @@ class SelectionSort:
         if self.__verbose:
             print(self.__data)
             print("\nNumber of comparisons: {}".format(self.__comparisons))
-            print("Number of swaps: {}".format(self.__swaps))
+            print("Number of swaps: {}".format(self.__operations))
             print("In {:.4f}s".format(self.__time))
 
 
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     selSorter.sort()
     print("\nNumber of elements: {}".format(len(d)))
     print("Number of comparisons: {}".format(selSorter.getComparisons()))
-    print("Number of swaps: {}".format(selSorter.getSwaps()))
+    print("Number of swaps: {}".format(selSorter.getOperations()))
     print("In {:.4f}s".format(selSorter.getTime()))
     test = True
     for el in range(1,len(d)-1):
@@ -107,9 +107,10 @@ if __name__ == "__main__":
     selSorter.sort()
     print("\nNumber of elements: {}".format(len(d)))
     print("Number of comparisons: {}".format(selSorter.getComparisons()))
-    print("Number of swaps: {}".format(selSorter.getSwaps()))
+    print("Number of swaps: {}".format(selSorter.getOperations()))
     print("In {:.4f}s".format(selSorter.getTime()))
     test = True
     for el in range(1,len(d)-1):
         test = test and (d[el]<= d[el+1])
     print("Sorting test passed? {}".format(test))
+    
