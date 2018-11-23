@@ -2,13 +2,13 @@ import unittest
 import random
 
 #this has problems (test X=[1,1,2,2,3], Y=[4,3])
-def myListIntersection2(X,Y):
+def myListIntersection(X,Y):
     tmp = X + Y
     vals = [x for x in tmp if tmp.count(x) == 2]
     return list(set(vals))
 
 ##Correct!
-def myListIntersection(X,Y):
+def myListIntersection2(X,Y):
     inx = [ x for x in X if x in Y]
     iny = [y for y in Y if y in X]
     return list(set(inx + iny))
@@ -62,4 +62,4 @@ if __name__ == "__main__":
     print("A, C: {}".format(myListIntersection(A,C)))
     print("B, C: {}".format(myListIntersection(B,C)))
     print("A, D: {}".format(myListIntersection(A,D)))   
-    unittest.main()
+    #unittest.main()
