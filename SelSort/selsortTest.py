@@ -71,7 +71,9 @@ class Test(unittest.TestCase):
     
     def test_empty(self):
             """sorting of empty list is empty"""
-            self.assertEqual(SelSort.SelectionSort([]).getData(),[])
+            sorter = SelSort.SelectionSort([])
+            sorter.sort()
+            self.assertEqual(sorter.getData(),[])
 
             
 if __name__ == "__main__":
