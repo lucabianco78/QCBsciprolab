@@ -5,6 +5,7 @@
     :glob:
 
     home.ipynb
+    practical1.ipynb
     practical2.ipynb
     practical3.ipynb
     practical4.ipynb
