@@ -19,6 +19,7 @@
     midterm1_sim.ipynb
     practical12.ipynb
     practical13.ipynb
+    practical14.ipynb
     
 Table of Contents
 ---------------------
