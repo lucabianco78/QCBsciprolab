@@ -5,6 +5,7 @@
     :glob:
 
     home.ipynb
+
     practical1.ipynb
     practical2.ipynb
     practical3.ipynb
@@ -21,6 +22,4 @@
     practical13.ipynb
     practical14.ipynb
     
-Table of Contents
----------------------
-    
+
