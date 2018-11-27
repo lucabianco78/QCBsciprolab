@@ -6,7 +6,7 @@
 
     home.ipynb
 
-    practical1.ipynb
+    introduction.ipynb
 
     practical2.ipynb
     practical3.ipynb
@@ -22,5 +22,5 @@
     practical12.ipynb
     practical13.ipynb
     practical14.ipynb
-    practical1.ipynb    
+    
 
