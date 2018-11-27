@@ -3,7 +3,6 @@
 .. toctree::
     :maxdepth: 2
     :glob:
-
     practical1.ipynb
     practical2.ipynb
     practical3.ipynb
