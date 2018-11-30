@@ -1,3 +1,5 @@
+"""file: QuickSort.py"""
+
 import random
 import time
 
@@ -32,8 +34,7 @@ class QuickSort:
         accordingly"""
         p = self.__data[start]
         j = start
-        print("start:{} end:{}".format(start,end))
-        print("list: {}".format(self.__data[start:end+1]))
+       
         for i in range(start + 1, end + 1):
             self.__comparisons += 1
             if( self.__data[i] < p):
@@ -43,7 +44,7 @@ class QuickSort:
       
         self.swap(start,j)
         self.__operations += 1
-        print(self.__data)
+
         return j
     
     def recQuickSort(self, start, end):
@@ -51,20 +52,24 @@ class QuickSort:
         itself on the left and right sublists
         """
         if start < end:
+            #GET THE PIVOT
             j = self.pivot(start, end)
-            #print("PIVOT: index:{} val:{}".format(j, self.__data[j]))
-            #print("Running again on: {}".format(self.__data[start:j]))
+            
             if self.__verbose:
                 print("PIVOT: index:{} val:{}".format(j, self.__data[j]))
                 print(self.__data)
-                print("Running again on: {}".format(self.__data[start:j]))
+                print("Running again on (left): {}".format(self.__data[start:j]))
+                print("from start: {} to j-1:{}".format(start,j-1))
+            #Run on LEFT SUBLIST
             self.recQuickSort(start, j - 1)
 
             if self.__verbose:
-                print("PIVOT: index:{} val:{}".format(j, self.__data[j]))
                 print(self.__data)
-                print("Running again on: {}".format(self.__data[j+1:end]))
-            self.recQuickSort(j+1, end)
+                print("Running again on (right): {}".format(self.__data[j+1:end]))
+                print("from start: {} to j-1:{}".format(j+1,end))
+            
+            #Run on RIGHT SUBLIST
+            self.recQuickSort(j + 1, end)
     
     def sort(self):
         self.__comparisons = 0
@@ -95,10 +100,11 @@ class QuickSort:
             print("In {:.4f}s".format(self.__time))
 
 if __name__ == "__main__":
-    d = [7, 5, 10, -11 ,3, -4, 99, 1]
+    d = [7, 3, 10, -11 ,5, -4, 99, 1]
     qkSorter = QuickSort(d, verbose = True)
     qkSorter.sort()
     d = []
+
     for i in range(0,10000):
         d.append(random.randint(0,1000))
     qkSorter = QuickSort(d, verbose = False)
@@ -113,7 +119,7 @@ if __name__ == "__main__":
     print("Sorting test passed? {}".format(test))
     
     d = []
-    for i in range(0,200000):
+    for i in range(0,300000):
         d.append(random.randint(0,1000))
     qkSorter = QuickSort(d, verbose = False)
     qkSorter.sort()
@@ -125,4 +131,3 @@ if __name__ == "__main__":
     for el in range(0,len(d)-1):
         test = test and (d[el]<= d[el+1])
     print("Sorting test passed? {}".format(test))
-
