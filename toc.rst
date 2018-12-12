@@ -19,7 +19,9 @@
     practical10.ipynb
     practical11.ipynb
     midterm1_sim.ipynb
+    
     midterm2018_sol.ipynb
+    
     practical12.ipynb
     practical13.ipynb
     practical14.ipynb
