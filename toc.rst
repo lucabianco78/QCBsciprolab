@@ -20,7 +20,7 @@
     practical11.ipynb
     midterm1_sim.ipynb
     
-    midterm2018_sol.ipynb
+    midterm2018sol.ipynb
     
     practical12.ipynb
     practical13.ipynb
