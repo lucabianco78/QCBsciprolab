@@ -29,4 +29,5 @@
     practical16.ipynb    
     practical17.ipynb
     practical18.ipynb
+    practical19.ipynb
 
