@@ -32,3 +32,5 @@
     practical19.ipynb
     practical20.ipynb
 
+
+    midterm2_sim.ipynb
