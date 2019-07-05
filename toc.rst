@@ -38,3 +38,4 @@
     jan2019_test.ipynb
     feb2019_test.ipynb
     june19/jun102019-v2.ipynb
+    july19/july20719.ipynb    
